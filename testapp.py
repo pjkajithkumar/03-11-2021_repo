@@ -14,12 +14,12 @@ def ebcalc():
       if ebtype=="domestic":
           amount=int(units*2)
           if units<=100:
-            return "For your domestic EB type, Your amount is: "+str (amount)+". Less than 100 units and no need to pay. Thank you!"
+            return "For your domestic EB type, Your amount is: "+str (amount)+". Less than 100 units and no need to pay. Thank you! info from version 2"
           else:
-              return "For your domestic EB type, Your amount is: "+str (amount)+". Kindly pay the amount for your "+str(units)+" units. Thank you!"
+              return "For your domestic EB type, Your amount is: "+str (amount)+". Kindly pay the amount for your "+str(units)+" units. Thank you! info from version 2"
       else:
           amount=units*4
-          return "For your commercial EB type, Your amount is: "+str (amount)+". Kindly pay the amount for your "+str(units)+" units. Thank you!"
+          return "For your commercial EB type, Your amount is: "+str (amount)+". Kindly pay the amount for your "+str(units)+" units. Thank you! info from version 2"
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=8080, debug=True)
